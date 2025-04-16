@@ -17,7 +17,7 @@ header {
     background-color: #2D3047; /* Синий цвет */
 }
 .bottom_blue_strip {
-    height: 5px; /* Высота полоски */
+    height: 3px; /* Высота полоски */
     background-color: #93B7BE;
     opacity: 50%; /* Синий цвет */
 }
@@ -42,10 +42,6 @@ nav {
     align-content: center;
     flex-grow: 4;
 }
-page {
-    align-content: center;
-    text-align: center;
-}
 div.work_exp {
     display: grid;
     grid-template-columns: 20% 50%;
@@ -63,7 +59,7 @@ div.date {
     font-size: 24px;
 }
 h1 {
-    font-size: 32px;
+    font-size: 36px;
     font-style: normal;
     color: #2D3047;
 }
@@ -80,7 +76,7 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
 }
 li {
     padding-bottom: 20px;
@@ -102,4 +98,31 @@ li {
     width: 100%;
     background-color: #E0CA3C;
     left: 0;
+}
+.page {
+    box-sizing: border-box;
+    border: 1px;
+}
+.active {
+    border-bottom: #E0CA3C solid 1px;
+}
+.page:hover {
+    border-bottom: #E0CA3C solid 3px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+div.education {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+image {
+    width: 400px;
+    height: auto;
+}
+.edu_info{
+    flex:2;
 }
