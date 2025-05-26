@@ -27,7 +27,7 @@ menu {
     margin-bottom: 40px;
     align-content: center;
 }
-my_name {
+.my_name {
     font-size: 32px;
     text-align: left;
     margin-left: 20px;
@@ -119,10 +119,29 @@ div.education {
     gap: 20px;
     align-items: center;
 }
-image {
+img {
     width: 400px;
     height: auto;
 }
 .edu_info{
     flex:2;
+}
+.timeline {
+    display: flex;
+    width: 100%;
+}
+
+.timeline-item {
+  width: 20%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background-color: #f4f4f4;
+  border-left: 5px solid #93B7BE; /* Добавляет стиль для выделения */
+  font-size: 18px;
+}
+
+.image_edu {
+    width: 80%;
+    height: auto;
 }
