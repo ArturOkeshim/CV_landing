@@ -21,26 +21,27 @@ header {
     background-color: #93B7BE;
     opacity: 50%; /* Синий цвет */
 }
-menu {
+.navigation {
     display: flex;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    align-items: center;
     align-content: center;
+    justify-content: center;
+    flex-direction: row;
 }
 .my_name {
     font-size: 32px;
-    text-align: left;
-    margin-left: 20px;
-    flex-grow: 1;
+    flex-grow: 0;
+    margin-left: 5%;
     text-align: center;
 }
-nav {
+.sections {
     font-size: 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-content: center;
-    flex-grow: 4;
+    align-items: right;    
+    flex-grow: 1;
+    height: fit-content;
 }
 div.work_exp {
     display: grid;
@@ -113,14 +114,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
-div.education {
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
 img {
-    width: 400px;
     height: auto;
 }
 .edu_info{
@@ -130,18 +124,167 @@ img {
     display: flex;
     width: 100%;
 }
-
-.timeline-item {
-  width: 20%;
-  padding: 20px;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  background-color: #f4f4f4;
-  border-left: 5px solid #93B7BE; /* Добавляет стиль для выделения */
-  font-size: 18px;
+.timeline-item1 {
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-left: 5px solid #93B7BE; /* Добавляет стиль для выделения */
+    align-content: center;
+}
+.timeline-item2 {
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-left: 5px solid #93B7BE; /* Добавляет стиль для выделения */
+    align-content: center;
+}
+.body_edu {
+    margin-left: 5%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.education {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
+.university_name {
+    flex:0;
+    align-self: left;
+    text-align: left;
+}
+.program_name {
+    flex:1;
+    align-self: center;
+    text-align: center;
+}
+.image_edu {
+    display: flex;
+    justify-content: left;
+    width:100%;
+    margin: 10px 0;
+}
+.image_edu img {
+    width: 100%;
+    height: auto;
+    display: block
+}
+.edu_info {
+    width: 100%; /* Занимает всю ширину */
+}
+.empty {
+    height: 100px;
+}
+.skills_info {
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
+}
+.skill_block {
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skills_top {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: max-content;
+    height: 30%;
+}
+.skill_icon {
+    flex: 1;
+    max-width: 15%;
+}
+.skill_icon img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.skills_text {
+    flex:5;
+}
+.about_me_info {
+    max-width: 75%; /* Например */
+    margin: 5% auto; /* auto по бокам центрирует блок */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.about_me_image {
+    flex:2;
+}
+.about_me_image img {
+    width:100%;
+    height: auto;
+    align-self: center;
+}
+.about_me_text {
+    margin:5%;
+    flex:4;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
 }
 
-.image_edu {
+.modal-content {
+    background-color: #fefefe;
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
     width: 80%;
-    height: auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+#close-modal {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 8px 16px;
+    background-color: #E0CA3C;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button {
+    vertical-align: middle;
+    width:fit-content;
+    height:fit-content;
+    background-color: transparent;
+    border-radius: 0;
+    border: #93B7BE 0.5px solid;
+    color:#2D3047;
+    font-size: 16px;
+    transition: hover 0.5s;
+    cursor: pointer;
+}
+button:hover {
+    border: #E0CA3C 0.5px solid;
+}
+button:active {
+    background-color: #E0CA3C;
+    color: white;
+}
+#close_contacts {
+    position: fixed;
+    right: 2%;
+}
+#open_contacts {
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
 }

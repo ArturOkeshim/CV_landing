@@ -13,13 +13,13 @@
     <body>
         <header>
             <div class="top_blue_strip"></div> 
-            <menu>
+            <nav class="navigation">
                 <div class="my_name">
                     <p>
                         Мищенко Артем
-                    </p>
+                    </p> 
                 </div>
-                <nav class="navigation">
+                <div class="sections">
                     <div class="active page">
                         <a href="index.html">
                             Опыт работы
@@ -31,15 +31,27 @@
                         </a>
                     </div>
                     <div class="page">
-                        Навыки
+                        <a href="skills.html">
+                            Навыки
+                        </a>
                     </div>
                     <div class="page">
-                        О себе
+                        <a href="about_me.html">
+                            О себе
+                        </a>
                     </div>
-                </nav>
-            </menu>
+                </div>
+            </nav>
             <div class="bottom_blue_strip"></div>
         </header>
+        <div id="welcome-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-modal">&times;</span>
+                <h2>Привет! 👋</h2>
+                <p>Это мой учебный проект, где я практикую веб-разработку.</p>
+                <p>Сайт в процессе разработки, но ты уже можешь им пользоваться!</p>
+            </div>
+        </div>
         <div class='info'>
             <div class="work_exp">
                 <div class="date">
@@ -121,7 +133,10 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
+        <button id="open_contacts"><span>Показать контакты</span></button>
+        <div id="footer" class="footer">
+            <button id="open_contacts"><span>Показать контакты</span></button>
+            <button id="close_contacts"><span>Cкрыть контакты</span></button>
             <div class="contacts">
                 <div class="contacts2">
                     <h2>+7 (964) 532-83-25</h2>
